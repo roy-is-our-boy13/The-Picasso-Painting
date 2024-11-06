@@ -1,3 +1,10 @@
+.blackItemBlock 
+{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    justify-self: start;
+}
 .aGridBackgroundColor
 {
     display: grid;
@@ -54,7 +61,6 @@ h1
     width: 200px;
     margin-left: auto;
     margin-right: auto
-
 }
 .moveTree
 {
@@ -94,7 +100,7 @@ h1
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
     border-bottom: 80px solid rgb(128, 90, 0);
-    margin-left: 1in
+    margin-left: 1in;
 }
 .bottomHouse
 {
@@ -132,7 +138,6 @@ input[type=submit]
     background-color: gold;
     z-index: 4; 
 }
-
 .rectangle3
 {
     width: 1384.10px;
@@ -149,21 +154,268 @@ input[type=submit]
     padding: 20px;
     z-index: 6;
 }
+/*
+    This is for computer screens that are much higher in resolutin.
+*/
 
-@media(max-width: 900px)
+@media screen and (min-width: 1027px) 
 {
-    div 
+    .blackItemBlock 
     {
-      padding: 0px;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        justify-self: start;
+    }
+    .aGridBackgroundColor
+    {
+        display: grid;
+        grid-template-columns: 100% 100% 100% 100%;
+        grid-template-rows: 20% 40% 20% 40%;
+        gap: 20px;
+        background-color: greenyellow;
+        padding: 20px;
+    }
+    .sun
+    {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        border-radius: 60%;
+        margin-left: 10in;
+    }
+    .sky
+    {
+        height: 100;
+        background: linear-gradient(to bottom, #87ceeb, #e8e0e0 90%);
+    }
+    .aHeader
+    {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .paragraph
+    {
+        text-align: center;
+        text-indent: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: rgb(137, 20, 220) !important;
+    }
+    h1
+    {  
+        font-size: 2.14rem; 
+        margin: 2%;
+    }
+    .grass
+    {
+        background-color: green;
+        height: 40px;
+        width: 100%;
+        z-index: 1;
+    }
+    .filloutForm 
+    {
+        position: relative;
+        background-color: rgb(231, 226, 226);
+        border: solid black 5px;
+        border-radius: 9%;
+        margin: 2rem;
+        padding: 1rem;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .moveTree
+    {
+        margin-left: 1in;
+        align-items: flex-end;
+        height: 2vh;
+    }
+    .moveTree2
+    {
+        margin-left: 5in;
+        align-items: flex-end;
+        height: 24vh;
+    }
+    .christmasTree
+    {   
+        width: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 300px solid green;
+        margin-left: 4in;
+
+    }
+    .treeStem
+    {
+        background-color: brown;
+        width: 30px;
+        height: 80px;
+        margin-left: 4.6in
+    }
+    .house
+    {
+        margin-left: 6in;
+    }
+    .roof
+    {
+        width: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 80px solid rgb(128, 90, 0);
+        margin-left: 1in;
+    }
+    .bottomHouse
+    {
+        width: 80px;
+        height: 100px;
+        background-color: rgb(146, 102, 19);
+        margin-left: 1.3in;
+    }
+    input[type=submit]
+    {
+        background-color: #a0b243; 
+        border: 9;
+        padding: 16px 32px;
+        cursor: pointer;
+    }
+    .dirt 
+    {
+        grid-area: 1 / col4-start / last-line / 6;
+        width: 1384.10px;
+        height: 100px;
+        background-color: rgb(159, 118, 42);
+        z-index: 2;
+    }
+    .rectangle1 
+    {
+        width: 1384.10px;
+        height: 100px;
+        background-color: brown;
+        z-index: 3;
+    }
+    .rectangle2
+    {
+        width: 1384.10px;
+        height: 100px;
+        background-color: gold;
+        z-index: 4; 
+    }
+    .rectangle3
+    {
+        width: 1384.10px;
+        height: 100px;
+        background-color: mistyrose;
+        z-index: 5;     
+    }
+    .aGridBackgroundBottom
+    {
+        display: grid;
+        grid-template-columns: 100% 20% 100% 100%;
+        gap: 20px;
+        background-color: rgb(199, 201, 195);
+        padding: 20px;
+        z-index: 6;
     }
 }
-
-@media screen and (nin-width: 768px)
+/*
+    This is for the Mobile Screen, if user is uing an iPhone or Andorid Smart Phone.
+*/
+@media screen and (max-width: 767px) 
 {
-
+    .aGridBackgroundColor
+    {
+        grid-template-columns: 1fr;
+    }
+    .sky 
+    {
+        height: 1440px;
+        width: 400px;
+    }
+    .sun 
+    {
+        margin-left: auto; 
+    }
+    .aHeader 
+    {
+        font-size: 1.5rem;
+    }
+    .filloutForm 
+    {
+        width: 80%;
+    }
+    .treeStem 
+    {
+        height: 60px;
+        margin-left: -.5in
+    }
+    .rectangle1, .rectangle2, .rectangle3, .dirt
+    {
+        height: 40px;
+        width: 100%;
+    }
+    .christmasTree
+    {
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 300px solid green;
+        margin-left: -1.1in;
+    }
+    .roof
+    {
+        margin-left: -4.3in;
+    }
+    .bottomHouse
+    {
+        margin-left: -4in;
+    }
+    .moveTree2
+    {
+        margin-left: 5in;
+    }
 }
+/*
+    This is for the Tablet Screen, if user is uing an iPad or Andorid Tablet ect.
+*/
 
-@media screen and (min-width: 1058px)
+@media screen and (min-width: 1024px) 
 {
-
+    .aGridBackgroundColor
+    {
+        grid-template-columns: .4fr 1fr 1fr 1fr; 
+    }
+    .sky 
+    {
+        height: 1390px;
+        width: 900px;
+    }
+    .rectangle1, .rectangle2, .rectangle3, .dirt, .grass
+    {
+        height: 20px;
+        width: 100%;
+    }
+    .roof
+    {
+        margin-left: -2in;
+    }
+    .bottomHouse
+    {
+        margin-left: -1.7in;
+    }
+    .sun
+    {
+        margin-left: auto;
+    }
+    .treeStem 
+    {
+        height: 70px;
+        margin-left: 1.5in
+    }
+    .christmasTree
+    {
+        width: 0;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+        border-bottom: 474px solid green;
+        margin-left: 1in;
+    }
 }
