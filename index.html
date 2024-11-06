@@ -6,19 +6,21 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Form</title>
 </head>
-<body>
-    <section class = "aGrid">
+<body class = "aGridBackgroundColor">
+    <section>
         <div class = "sky"><d/iv>
         <div class = "sun"></div>
-            <header><h1 align="center">Welcome to Palm Springs Hotel Resort</h1></header>
-            <p>Before booking your hotel room, please complete the form below, and one of our administrators will contact you.</p>
+        <header><h1 class = "aHeader" align="center">Welcome to Palm Springs Hotel Resort</h1></header>
+        <article class = "paragraph">
+            <p>Please complete the form below before booking your hotel room, and one of our administrators will contact you.</p>
+        </article>
         <article class = "filloutForm ">
             <form action="./form-submitted.html">
                 <label for="fname">First Name:</label><br/>
                     <input type="text" name="fname" id="fname" /><br/><br/>
                 <label for="fname">Last Name:</label><br/>
                     <input type="text" name="lname" id="lname" /><br/><br/>
-                <label for="cellNumber">Cell Number:</label><br/>
+                <label for="cellNumber">Phone Number:</label><br/>
                     <input type="number" id="cellNumber" name="cellNumber"/><br/><br/>
                 <label for="email">Email:</label><br/>
                     <input type="email" id="email" name="email" /><br/><br/>
@@ -38,7 +40,9 @@
             <div class = "roof"></div>
             <div class = "bottomHouse"></div>
         </div>
-        <div class = "grass"></div>
+        <div class="grass"></div>
+        <div class="dirt"></div>
+        <footer class="aGridBackgroundBottom" align="center">&copy Made in California</footer>
     </section>
 </body>
 </html>

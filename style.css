@@ -1,23 +1,43 @@
-.aGrid
+.aGridBackgroundColor
 {
-
+    display: grid;
+    grid-template-columns: 100% 100% 100% 100%;
+    grid-template-rows: 20% 40% 20% 40%;
+    gap: 20px;
+    background-color: greenyellow;
+    padding: 20px;
+}
+.aGridBackgroundBottom
+{
+    display: grid;
+    grid-template-columns: 100% 20% 100% 100%;
+    gap: 20px;
+    background-color: rgb(199, 201, 195);
+    padding: 20px;
 }
 .sun
 {
     width: 100px;
     height: 100px;
     background-color: orange;
-    border-radius: 50%;
+    border-radius: 60%;
     margin-left: 10in;
 }
 .sky
 {
-    height: 100vh;
-    background: linear-gradient(to bottom, #87ceeb, #ffffff 60%);
+    height: 100;
+    background: linear-gradient(to bottom, #87ceeb, #e8e0e0 90%);
 }
-p
+.aHeader
 {
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.paragraph
+{
+    text-align: center;
+    text-indent: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(137, 20, 220) !important;
 }
 h1
 {  
@@ -45,15 +65,15 @@ h1
 }
 .moveTree
 {
-    margin-left: -3in;
+    margin-left: 1in;
     align-items: flex-end;
     height: 2vh;
 }
 .moveTree2
 {
-    margin-left: 1in;
+    margin-left: 5in;
     align-items: flex-end;
-    height: 22vh;
+    height: 24vh;
 }
 .christmasTree
 {   
@@ -90,7 +110,21 @@ h1
     background-color: rgb(146, 102, 19);
     margin-left:1.3in;
 }
-
+input[type=submit]
+{
+    background-color: #a0b243; 
+    border: 9;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+.dirt 
+{
+    grid-area: 1 / col4-start / last-line / 6;
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(159, 118, 42);
+}
+/*
 @media (min-width: 992px) 
 {
     body 
@@ -98,5 +132,11 @@ h1
         max-width: 1500px;
         margin: auto;
     }
-}
+}*/
 
+@media(max-width: 900px)
+{
+    div {
+      padding:0px;
+    }
+}
