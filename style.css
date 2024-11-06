@@ -1,29 +1,102 @@
+.aGrid
+{
+
+}
 .sun
 {
     width: 100px;
     height: 100px;
     background-color: orange;
-    border-radius: 50%;;
-
+    border-radius: 50%;
+    margin-left: 10in;
 }
-/*
-body
+.sky
 {
-    display: flex;
-    flex-wrap: wrap;
-}*/
+    height: 100vh;
+    background: linear-gradient(to bottom, #87ceeb, #ffffff 60%);
+}
+p
+{
+    
+}
+h1
+{  
+    font-size: 2.14rem; 
+    margin: 2%;
+}
 .grass
 {
     background-color: green;
-    height: 20px;
+    height: 40px;
     width: 100%;
-    margin-top: 500px;
 }
-
 .filloutForm 
 {
+    position: relative;
+    background-color: rgb(231, 226, 226);
     border: solid black 5px;
     border-radius: 9%;
     margin: 2rem;
     padding: 1rem;
-  }
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto
+
+}
+.moveTree
+{
+    margin-left: -3in;
+    align-items: flex-end;
+    height: 2vh;
+}
+.moveTree2
+{
+    margin-left: 1in;
+    align-items: flex-end;
+    height: 22vh;
+}
+.christmasTree
+{   
+    width: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 300px solid green;
+    margin-left: 4in;
+
+}
+.treeStem
+{
+    background-color: brown;
+    width: 30px;
+    height: 80px;
+    margin-left: 4.6in
+}
+.house
+{
+    margin-left: 6in;
+}
+.roof
+{
+    width: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 80px solid rgb(128, 90, 0);
+    margin-left: 1in
+}
+.bottomHouse
+{
+    width: 80px;
+    height: 100px;
+    background-color: rgb(146, 102, 19);
+    margin-left:1.3in;
+}
+
+@media (min-width: 992px) 
+{
+    body 
+    {
+        max-width: 1500px;
+        margin: auto;
+    }
+}
+
