@@ -7,14 +7,6 @@
     background-color: greenyellow;
     padding: 20px;
 }
-.aGridBackgroundBottom
-{
-    display: grid;
-    grid-template-columns: 100% 20% 100% 100%;
-    gap: 20px;
-    background-color: rgb(199, 201, 195);
-    padding: 20px;
-}
 .sun
 {
     width: 100px;
@@ -49,6 +41,7 @@ h1
     background-color: green;
     height: 40px;
     width: 100%;
+    z-index: 1;
 }
 .filloutForm 
 {
@@ -108,7 +101,7 @@ h1
     width: 80px;
     height: 100px;
     background-color: rgb(146, 102, 19);
-    margin-left:1.3in;
+    margin-left: 1.3in;
 }
 input[type=submit]
 {
@@ -120,23 +113,57 @@ input[type=submit]
 .dirt 
 {
     grid-area: 1 / col4-start / last-line / 6;
-    width: 1400px;
+    width: 1384.10px;
     height: 100px;
     background-color: rgb(159, 118, 42);
+    z-index: 2;
 }
-/*
-@media (min-width: 992px) 
+.rectangle1 
 {
-    body 
-    {
-        max-width: 1500px;
-        margin: auto;
-    }
-}*/
+    width: 1384.10px;
+    height: 100px;
+    background-color: brown;
+    z-index: 3;
+}
+.rectangle2
+{
+    width: 1384.10px;
+    height: 100px;
+    background-color: gold;
+    z-index: 4; 
+}
+
+.rectangle3
+{
+    width: 1384.10px;
+    height: 100px;
+    background-color: mistyrose;
+    z-index: 5; 
+}
+.aGridBackgroundBottom
+{
+    display: grid;
+    grid-template-columns: 100% 20% 100% 100%;
+    gap: 20px;
+    background-color: rgb(199, 201, 195);
+    padding: 20px;
+    z-index: 6;
+}
 
 @media(max-width: 900px)
 {
-    div {
-      padding:0px;
+    div 
+    {
+      padding: 0px;
     }
+}
+
+@media screen and (nin-width: 768px)
+{
+
+}
+
+@media screen and (min-width: 1058px)
+{
+
 }
